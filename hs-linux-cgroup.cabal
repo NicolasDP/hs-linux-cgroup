@@ -3,8 +3,15 @@
 
 name:                hs-linux-cgroup
 version:             0.1.0.0
--- synopsis:
--- description:
+synopsis:            Linux CGroup manipulation API
+description:
+  .
+  An haskell API to manipulate CGroup.
+  .
+  This implementation only allow minimal manipulation as building the CGroup
+  Virtual FileSystem Tree in a Haskell Tree, finding a sub CGroup, list task in a
+  CGroup.
+  .
 license:             BSD3
 license-file:        LICENSE
 author:              Nicolas DI PRIMA
@@ -21,3 +28,4 @@ library
                      , system-filepath
                      , system-fileio
                      , bytestring
+                     , utf8-string
